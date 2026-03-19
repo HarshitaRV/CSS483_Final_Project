@@ -1,3 +1,4 @@
+#Change the file paths here as well 
 import pandas as pd
 
 file_path = "/Users/acchuaccount/CSS483/data/clinical_raw/INFOclinical_HN_Version2_30may2018.xlsx"
