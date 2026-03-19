@@ -1,3 +1,4 @@
+#Please edit the directories for all xlsx files and replace it with your own 
 import numpy as np
 import pandas as pd
 
@@ -39,7 +40,7 @@ clin_patient = (
     clin_valid.groupby("Patient_ID", as_index=False)[["Locoregional", "Death", "Distant"]].max()
 )
 
-# Strict label requested by user: 1 only if all three events are present.
+# 1 only if all three events are present.
 clin_patient["Label_all3"] = (
     (clin_patient["Locoregional"] == 1)
     & (clin_patient["Death"] == 1)
