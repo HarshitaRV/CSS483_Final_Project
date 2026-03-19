@@ -45,7 +45,7 @@ Note: This catalog documents project-level scripts and key custom wrappers. The 
 ### `scripts/03_model_training`
 
 - `scripts/03_model_training/train_ml_baseline.py`: baseline ML run (80/20 split) with Logistic Regression, SVM, Random Forest and ROC-AUC outputs.
-- `scripts/03_model_training/train_ml_advanced.py`: advanced evaluation (5-fold CV, hyperparameter tuning, endpoint-wise comparisons, feature-set ablations).
+- `scripts/03_model_training/train_ml_advanced.py`: advanced evaluation (Endpoint-wise comparisons).
 
 ### `scripts/04_analysis_visualization`
 
