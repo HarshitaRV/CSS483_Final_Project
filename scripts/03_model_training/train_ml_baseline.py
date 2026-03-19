@@ -19,7 +19,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, stratify=y, random_state=42
 )
 
-# Scale for LR + SVM (RF doesn't need it but doesn't hurt)
+# Scale for LR + SVM 
 scaler = StandardScaler()
 X_train_sc = scaler.fit_transform(X_train)
 X_test_sc  = scaler.transform(X_test)
