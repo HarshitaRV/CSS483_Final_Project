@@ -1,6 +1,33 @@
 """
-Advanced ML training: 5-fold stratified CV, hyperparameter tuning,
-multiple feature sets, and separate clinical endpoints.
+Advanced ML training: 
+
+# ─── LIMITATIONS ───────────────────────────────────────────────────
+# 1. AUC estimates:
+#    - GridSearchCV is used on the full dataset before cross_val_predict
+#      → some information leaks into validation predictions
+#    - True evaluation should use nested CV for unbiased performance
+#
+# 2. Imputation leakage:
+#    - Missing values are filled with the **global median** before splitting
+#      → minor leakage into validation folds
+#    - Better: Could look into more for this aspect for future work
+#
+# 3. Endpoint handling:
+#    - Missing labels are filled as 0 (negative event)
+#      → may misrepresent true outcomes
+#
+# 4. Clinical feature simplifications:
+#    - Primary site, HPV, T-stage, N-stage are encoded coarsely
+#
+# 5. RF feature importances:
+#    - Only derived from the best feature set per endpoint
+#    - Do not directly imply causality
+#
+# 6. Imaging-derived features:
+#    - ROI/mask metrics are handcrafted proxies, not clinically validated
+#    - Muscle segmentation uses fixed thresholds on PNGs (HU values lost)
+#    - Features should be interpreted as approximate signals
+
 """
 import os
 import warnings
