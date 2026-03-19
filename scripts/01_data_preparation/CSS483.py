@@ -1,3 +1,6 @@
+#Make sure to update the data_dir and file_path to your own local machine's path
+#CT-Scans download from: https://www.kaggle.com/datasets/anthonytherrien/ct-scan-head-and-neck
+#INFOclinical_HN_Version2_30may2018.xlsx download from: https://www.cancerimagingarchive.net/collection/head-neck-pet-ct/ under the clinical data (2nd row)
 import os
 import pandas as pd
 
