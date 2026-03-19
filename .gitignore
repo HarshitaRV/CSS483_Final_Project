@@ -1,0 +1,40 @@
+# Large CT scan data (too large for GitHub)
+CT-Scan/
+CT-Scan-SegOut/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Large model weights and binary data
+*.hdf5
+*.h5
+*.nrrd
+*.nii
+*.nii.gz
+
+# Installer scripts
+Miniconda3*.sh
+
+# Compiled extensions
+*.so
+*.dylib
+
+# Eggs & dist
+*.egg-info/
+dist/
+build/

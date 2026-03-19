@@ -1,0 +1,3 @@
+[submodule "DeepSarcopenia"]
+	path = DeepSarcopenia
+	url = https://github.com/AIM-KannLab/DeepSarcopenia.git
