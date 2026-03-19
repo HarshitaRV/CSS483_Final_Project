@@ -96,7 +96,8 @@ Note: This catalog documents project-level scripts and key custom wrappers. The 
 ## Quick Run Examples
 
 From repository root:
-
+Need to download the Dataset from Kaggle: https://www.kaggle.com/datasets/anthonytherrien/ct-scan-head-and-neck 
+Need to set up DeepSarcopenia Github Set-up: https://github.com/AIM-KannLab/DeepSarcopenia/tree/main
 ```bash
 python scripts/03_model_training/train_ml_baseline.py
 python scripts/03_model_training/train_ml_advanced.py
