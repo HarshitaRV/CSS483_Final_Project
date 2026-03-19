@@ -26,7 +26,3 @@ To copy actual files (portable folder):
 bash tests/sample_inputs/prepare_ct_sample_subset.sh --mode copy
 ```
 
-## Notes for Grading
-
-- If the grader has the original `CT-Scan/` folder, symlink mode is enough.
-- If you need to share a portable sample folder, use `--mode copy` and package `tests/sample_inputs/CT-Scan-Sample20`.
