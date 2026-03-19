@@ -1,3 +1,11 @@
+# NOTE:
+# The features extracted here are intensity-based proxies, not clinically accurate
+# measurements of skeletal muscle. This approach uses fixed grayscale thresholds
+# on PNG images, which do not preserve true CT Hounsfield Unit (HU) values.
+# As a result, the “muscle” regions may be imprecise, and the computed metrics
+# (muscle_ratio, muscle_density) should be interpreted as approximate signals
+# rather than validated clinical indicators of sarcopenia.
+
 import os
 import cv2
 import numpy as np
