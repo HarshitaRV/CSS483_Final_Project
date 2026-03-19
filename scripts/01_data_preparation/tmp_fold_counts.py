@@ -1,3 +1,4 @@
+#Change the file paths here as well  
 import pandas as pd
 from sklearn.model_selection import StratifiedKFold
 
